@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html  lang="en" 
+	xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"  
+	xmlns:f="http://java.sun.com/jsf/core"
+      
+      >
+<h:head>
+  <title><ui:insert name="title">Student registration form</ui:insert></title>
+</h:head>
+
+<h:body>
+
+<h:form>
+	<h:outputLabel  id="outtxt" value="#{user.name}"  />
+	<h:inputText id="intxt" value="#{user.name}" />
+	
+	<f:ajax event="keyup" execute="intxt" render="outtxt" />
+	
+</h:form>
+
+</h:body>
+
+
+
+</html>

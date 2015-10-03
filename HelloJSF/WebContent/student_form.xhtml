@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html  lang="en" 
+	xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"  
+      >
+<h:head>
+  <title><ui:insert name="title">Student registration form</ui:insert></title>
+</h:head>
+
+<h:body>
+
+<h:form>
+	name: <h:inputText id="firstName" value="#{student.firstName}" /> 
+	Last name: <h:inputText id="lastName" value="#{student.lastName}" /> 
+	
+	<h:commandButton value="Submit" action="student_response" />
+</h:form>
+
+</h:body>
+
+
+
+</html>
